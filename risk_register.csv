@@ -1,0 +1,9 @@
+ID,Threat,Affected Asset,Likelihood (1-5),Impact (1-5),Risk Score,Priority,Recommended Control
+T1,Account compromise / spoofing,User accounts,4,5,20,Critical,"Strong password hashing, MFA where appropriate, login rate limiting, safe account recovery."
+T2,SQL injection / tampering,Database,3,5,15,High,"Use parameterized queries, least-privilege database accounts, and server-side input validation."
+T3,Broken access control,Personal data,4,5,20,Critical,Check authorization on every protected server-side request; deny by default; test object-level access.
+T4,Session theft or fixation,Session tokens,3,4,12,High,"Use HTTPS, secure cookie flags, rotate session IDs after login, expire sessions, and invalidate on logout."
+T5,Sensitive data exposure,Personal data and secrets,3,5,15,High,"Minimize collected data, restrict access, encrypt traffic, keep secrets out of source control and logs."
+T6,Denial of service,Application server,3,4,12,High,"Apply rate limits, request/body size limits, timeouts, and infrastructure monitoring."
+T7,Insufficient logging / repudiation,Audit logs,3,3,9,Medium,"Log security-relevant events, protect logs from modification, synchronize time, and avoid logging secrets."
+T8,Privilege escalation,Admin functions,3,5,15,High,"Use role-based access control, least privilege, server-side checks, and review admin permissions."
